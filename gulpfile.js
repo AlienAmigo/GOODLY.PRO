@@ -53,7 +53,10 @@ function compileStyles() {
     .pipe(sourcemaps.init())
     .pipe(sass())
     .pipe(postcss([
-      autoprefixer({browsers: ['last 2 version']}),
+      autoprefixer({
+        browsers: ["defaults", "not IE 11", "not IE_Mob 11", "maintained node versions"],
+        forceImport: true
+      }),
     ]))
     .pipe(sourcemaps.write('/'))
     .pipe(dest(dir.build + 'css/'))
@@ -87,7 +90,7 @@ function copyJsVendors() {
 }
 
 function copyImages() {
-  return src(dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}')
+  return src(dir.src + 'img/**/*.{jpg,jpeg,png,svg,webp,gif,ico,webmanifest,xml}')
     .pipe(dest(dir.build + 'img/'));
 }
 exports.copyImages = copyImages;
@@ -127,7 +130,7 @@ function serve() {
   ], compilePug);
   watch(dir.src + 'js/*.js', processJs);
   watch(dir.src + 'css/*.{css,map}', copyAddCSS);
-  watch(dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}', copyImages);
+  watch(dir.src + 'img/**/*.{jpg,jpeg,png,svg,webp,gif}', copyImages);
   watch([
     dir.build + '*.html',
     dir.build + 'js/*.js',

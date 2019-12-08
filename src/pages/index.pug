@@ -22,13 +22,13 @@ html(class='page no-js', lang='ru')
     meta(name='msapplication-navbutton-color', content='#000')
     meta(name='apple-mobile-web-app-status-bar-style', content='#000')
     title Product | Новогодние скидки
-    link(rel='stylesheet', href='css/bootstrap.min.css')
+    //- link(rel='stylesheet', href='css/bootstrap.min.css')
     link(rel='stylesheet', href='css/style.css')
 
   body
     noscript У вас отключен JavaScript. Это пугает.
-    header.page-header.navbar.navbar-fixed-top
-      .container
+    .page-inner
+      header.page-header
         logo.logo.navbar-header
           a(href='/').logo__link
             img(src='img/logo.png', alt='').logo__img
@@ -38,21 +38,46 @@ html(class='page no-js', lang='ru')
           a(href='#').social-links__instagram
           a(href='#').social-links__fb
 
+      .page-content
+        .action
+          h1.action__title Новогодние скидки!
+          p.action__date Акция продлится до #[span="14"] января!
+          p.action__slogan Лови момент!
 
-    .page-inner.container
-      .action
-        h1.action__title Новогодние скидки!
-        p.action__date Акция продлится до #[span="14"] января!
+        - for(i=0; i<4; i++)
+          section.discount
+            .discount__percent -70%
+            .discount__img-wrap
+              img(src='img/box-mockup.png', alt='')
+            .discount__price
+              .discount__price
+            button(value='').discount__btn.discount__btn--buy Заказать
+            button(value='').discount__btn.discount__btn--more Подробнее
+            a.discount__important-info
+            h2.discount__title.
+              #[span Секреты продуктивной работы]
+                за компьтером
+            p.discount__text К сожалению, когда человек покупает компьютер или ноутбук, то с ним нет никакого обучающего пособия о том, как использовать покупку максимально эффективно. В итоге большинство пользователей используют свой компьютер на самом примитивном уровне.
 
-      section.discount
-        .discount__percent -70%
-        img(src='img/box-mockup.png', alt='').discount__img
+            .discount__recomendations
+              .discount__recomendations-item.discount__recomendations-item--vk
+              .discount__recomendations-item.discount__recomendations-item--instagram
+              .discount__recomendations-item.discount__recomendations-item--fb
+              .discount__recomendations-item.discount__recomendations-item--ok
+              .discount__recomendations-item.discount__recomendations-item--youtube
+              .discount__recomendations-item.discount__recomendations-item--in
+              .discount__recomendations-item.discount__recomendations-item--ljn
+              .discount__recomendations-item.discount__recomendations-item--mail
+              .discount__recomendations-item.discount__recomendations-item--yandex
+              .discount__recomendations-item.discount__recomendations-item--google
 
-        h2.discount__title.
-          #[span = 'Секреты продуктивной работы']
-            за компьтером
-        p.discount__text
-        .discount__recomendations
+          .discount__info
+            .discount__info-close
+            p.discount__info-text Покупая данный продукт, учтите следующие его особенности:
+            p.discount__info-text 1. Курс может поставляться на флеш-накопителе, в цифровом варианте или же как просмотр в онлайн-режиме. Курс без проблем запустится как на Windows, так и на OS X (Mac OS).
+            p.discount__info-text 2. Вы защищены 100% гарантией возврата денег на тот случай, если что-то пойдет не так. Гарантия действует 90 дней.
+
+
 
 
       form(method='post', action='', id='').news-subscribe
@@ -60,16 +85,16 @@ html(class='page no-js', lang='ru')
         itput(type='type').news-subscribe__input
         input(type='submit', value='Хочу получать новости о скидках').news-subscribe__submit
 
-    footer.footer
-      .container.footer__container
-        p.footer__text
-          a(href='') Политика конфедициальности
-          a(href='') Публичная оферта
-        p.footer__text
-          a(href='') Политика конфедициальности
-          a(href='') Публичная оферта
-        p.footer__text Клиентский кабинет:
-          a(href='') Публичная оферта
+      footer.footer
+        .container.footer__container
+          p.footer__text
+            a(href='') Политика конфедициальности
+            a(href='') Публичная оферта
+          p.footer__text
+            a(href='') Политика конфедициальности
+            a(href='') Публичная оферта
+          p.footer__text Клиентский кабинет:
+            a(href='') Публичная оферта
 
 script
 
