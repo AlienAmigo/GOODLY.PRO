@@ -103,6 +103,13 @@ function clean() {
 }
 exports.clean = clean;
 
+// ! копирование сторонних css-файлов из src/css
+function copyAddCSS() {
+  return src(dir.src + 'css/*.{css,map}')
+    .pipe(dest(dir.build + 'css/'));
+}
+exports.copyAddCSS = copyAddCSS;
+
 function serve() {
   browserSync.init({
     server: dir.build,
@@ -119,6 +126,7 @@ function serve() {
     dir.src + 'pug/*.pug',
   ], compilePug);
   watch(dir.src + 'js/*.js', processJs);
+  watch(dir.src + 'css/*.{css,map}', copyAddCSS);
   watch(dir.src + 'img/*.{jpg,jpeg,png,svg,webp,gif}', copyImages);
   watch([
     dir.build + '*.html',
@@ -130,5 +138,6 @@ function serve() {
 exports.default = series(
   clean,
   parallel(compileStyles, compilePug, processJs, copyJsVendors, copyImages, copyFonts),
+  parallel(copyAddCSS),
   serve
 );

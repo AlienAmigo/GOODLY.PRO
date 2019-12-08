@@ -1,0 +1,113 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-arrow-form-left {
+    width: 78px;
+    height: 51px;
+    background-position: -5px -5px;
+}
+
+.sprite-arrow-form-right {
+    width: 78px;
+    height: 51px;
+    background-position: -93px -5px;
+}
+
+.sprite-arrow-promo-left {
+    width: 54px;
+    height: 78px;
+    background-position: -5px -66px;
+}
+
+.sprite-arrow-promo-right {
+    width: 54px;
+    height: 78px;
+    background-position: -69px -66px;
+}
+
+.sprite-block-fb {
+    width: 10px;
+    height: 20px;
+    background-position: -133px -66px;
+}
+
+.sprite-block-gplus {
+    width: 18px;
+    height: 15px;
+    background-position: -153px -66px;
+}
+
+.sprite-block-in {
+    width: 15px;
+    height: 15px;
+    background-position: -153px -91px;
+}
+
+.sprite-block-mir {
+    width: 17px;
+    height: 12px;
+    background-position: -133px -116px;
+}
+
+.sprite-block-ok {
+    width: 12px;
+    height: 20px;
+    background-position: -160px -116px;
+}
+
+.sprite-block-pin {
+    width: 15px;
+    height: 18px;
+    background-position: -133px -146px;
+}
+
+.sprite-block-yandex {
+    width: 9px;
+    height: 18px;
+    background-position: -158px -146px;
+}
+
+.sprite-block-youtube {
+    width: 20px;
+    height: 14px;
+    background-position: -5px -174px;
+}
+
+.sprite-close-info {
+    width: 23px;
+    height: 23px;
+    background-position: -181px -5px;
+}
+
+.sprite-fb-head {
+    width: 41px;
+    height: 41px;
+    background-position: -181px -38px;
+}
+
+.sprite-inst-block {
+    width: 16px;
+    height: 16px;
+    background-position: -181px -89px;
+}
+
+.sprite-inst-head {
+    width: 41px;
+    height: 41px;
+    background-position: -177px -146px;
+}
+
+.sprite-vk-block {
+    width: 20px;
+    height: 13px;
+    background-position: -182px -115px;
+}
+
+.sprite-vk-head {
+    width: 41px;
+    height: 41px;
+    background-position: -232px -5px;
+}
