@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'Akrobat';
+  src:
+    url('../fonts/akrobat-webfont.eot'),
+    url('../fonts/akrobat-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/akrobat-webfont.woff2') format('woff2'),
+    url('../fonts/akrobat-webfont.woff') format('woff'),
+    url('../fonts/akrobat-webfont.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'ArctikaScript';
+  src:
+    url('../fonts/arctikascript-webfont.eot'),
+    url('../fonts/arctikascript-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/arctikascript-webfont.woff2') format('woff2'),
+    url('../fonts/arctikascript-webfont.woff') format('woff'),
+    url('../fonts/arctikascript-webfont.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+$basic-font: 'Akrobat', Arial, sans-serif;
+$design-font: 'ArctikaScript', Arial, sans-serif;
+
+@mixin basic-font($mx-font-size, $mx-font-color) {
+  font-family: $basic-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $mx-font-size;
+  color: $mx-font-color;
+}
+
+@mixin design-font($mx-font-size, $mx-font-color) {
+  font-family: $design-font;
+  font-weight: 400;
+  font-style: normal;
+  font-size: $mx-font-size;
+  color: $mx-font-color;
+}
