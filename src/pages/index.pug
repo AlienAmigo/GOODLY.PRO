@@ -1,20 +1,75 @@
-extends ../pug/layout.pug
+include ../pug/mixins.pug
 
-block meta
-  title Главная
-  meta(name='description', content='')
+doctype html
+html(class='page no-js', lang='ru')
 
-//- block append head
-//-   link(rel='stylesheet', href='css/some.css')
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=0')
+    meta(name='format-detection', content='telephone=no')
+    meta(name='format-detection', content='date=no')
+    meta(name='format-detection', content='address=no')
+    meta(name='format-detection', content='email=no')
+    meta(content='notranslate', name='google')
+    //- Фавиконки (https://realfavicongenerator.net)
+    link(rel='apple-touch-icon', sizes='76x76', href='img/favicon/apple-touch-icon.png')
+    link(rel='icon', type='image/png', sizes='32x32', href='img/favicon/favicon-32x32.png')
+    link(rel='icon', type='image/png', sizes='16x16', href='img/favicon/favicon-16x16.png')
+    link(rel='manifest', href='img/favicon/site.webmanifest')
+    link(rel='mask-icon', href='img/favicon/safari-pinned-tab.svg', color='#5bbad5')
+    meta(name='msapplication-TileColor', content='#00aba9')
+    meta(name='theme-color', content='#ffffff')
+    meta(name='msapplication-navbutton-color', content='#000')
+    meta(name='apple-mobile-web-app-status-bar-style', content='#000')
+    title Product | Новогодние скидки
+    link(rel='stylesheet', href='css/bootstrap.min.css')
+    link(rel='stylesheet', href='css/style.css')
 
-block header
-  p Лого
+  body
+    noscript У вас отключен JavaScript. Это пугает.
+    header.page-header.navbar.navbar-fixed-top
+      .container
+        logo.logo.navbar-header
+          a(href='/').logo__link
+            img(src='img/logo.png', alt='').logo__img
+            span.logo__text Ваше лого
+        .social-links
+          a(href='#').social-links__vk
+          a(href='#').social-links__instagram
+          a(href='#').social-links__fb
 
-block content
-  h1 Заголовок
 
-//- block footer
-//-   p footer
+    .page-inner.container
+      .action
+        h1.action__title Новогодние скидки!
+        p.action__date Акция продлится до #[span="14"] января!
 
-//- block append page-bottom
-//-   script(src='js/some.js')
+      section.discount
+        .discount__percent -70%
+        img(src='img/box-mockup.png', alt='').discount__img
+
+        h2.discount__title.
+          #[span = 'Секреты продуктивной работы']
+            за компьтером
+        p.discount__text
+        .discount__recomendations
+
+
+      form(method='post', action='', id='').news-subscribe
+        itput(type='type').news-subscribe__input
+        itput(type='type').news-subscribe__input
+        input(type='submit', value='Хочу получать новости о скидках').news-subscribe__submit
+
+    footer.footer
+      .container.footer__container
+        p.footer__text
+          a(href='') Политика конфедициальности
+          a(href='') Публичная оферта
+        p.footer__text
+          a(href='') Политика конфедициальности
+          a(href='') Публичная оферта
+        p.footer__text Клиентский кабинет:
+          a(href='') Публичная оферта
+
+script
+

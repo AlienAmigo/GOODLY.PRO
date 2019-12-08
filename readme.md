@@ -1,7 +1,7 @@
 # Тестовое задание для ООО «Директ»
 
 ## Cтэк
-HTML5, CSS3, Bootstrap 3, Javascript
+HTML5 (+ Pug), CSS3 (+ SASS (SCSS)), Bootstrap 3, Javascript
 
 ## Тех. задание
 Верстка должна быть выполнена с помощью HTML5, CSS3 и Bootstrap 3.
