@@ -1,0 +1,60 @@
+.action {
+
+  &__title-wrap {
+    // @mixin font-design("60px", $warning-color);
+    display: flex;
+    align-content: center;
+    position: relative;
+    margin-top: 15px;
+    height: 247px;
+
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      z-index: -1;
+      top: 0;
+      left: calc((100vw / -2) + 50%);
+      height: 100%;
+      width: 100vw;
+      background: url('/img/banner-sale.png') 25% 0 no-repeat,
+                  url('/img/banner-snowman.png') 80% 100% no-repeat,
+                  url('/img/banner-right.png') 100% 0 no-repeat,
+                  url('/img/banner-left.png') 0 0 no-repeat,
+                  ;
+      background-color: #f0f0ea;
+      box-shadow: 0 0 10px 0 rgba(0, 0, 0, .4);
+    }
+
+    &:after {
+      content: '';
+      display: block;
+    }
+  }
+
+  &__title {
+    font-family: $design-font;
+    font-size: 60px;
+    color: $warning-color;
+    text-shadow: -0 -5px 0 #fff, 0 -5px 0 #fff, -0 5px 0 #fff, 0 5px 0 #fff, -5px -0 0 #fff, 5px -0 0 #fff, -5px 0 0 #fff, 5px 0 0 #fff, -1px -5px 0 #fff, 1px -5px 0 #fff, -1px 5px 0 #fff, 1px 5px 0 #fff, -5px -1px 0 #fff, 5px -1px 0 #fff, -5px 1px 0 #fff, 5px 1px 0 #fff, -2px -5px 0 #fff, 2px -5px 0 #fff, -2px 5px 0 #fff, 2px 5px 0 #fff, -5px -2px 0 #fff, 5px -2px 0 #fff, -5px 2px 0 #fff, 5px 2px 0 #fff, -3px -5px 0 #fff, 3px -5px 0 #fff, -3px 5px 0 #fff, 3px 5px 0 #fff, -5px -3px 0 #fff, 5px -3px 0 #fff, -5px 3px 0 #fff, 5px 3px 0 #fff, -4px -5px 0 #fff, 4px -5px 0 #fff, -4px 5px 0 #fff, 4px 5px 0 #fff, -5px -4px 0 #fff, 5px -4px 0 #fff, -5px 4px 0 #fff, 5px 4px 0 #fff, -5px -5px 0 #fff, 5px -5px 0 #fff, -5px 5px 0 #fff, 5px 5px 0 #fff, -5px -5px 0 #fff, 5px -5px 0 #fff, -5px 5px 0 #fff, 5px 5px 0 #fff, 0 4px 8px rgba(0, 0, 0, .4);
+  }
+
+  &__date-wrap {
+    margin-top: 69px;
+    display: flex;
+    height: 110px;
+    background: url('/img/promo-back.png') 0 0 no-repeat;
+  }
+
+  &__date {
+    // @mixin font-basic("33px", #004734);
+    width: 100%;
+    text-align: center;
+    color: #004734;
+    font-size: 33px;
+
+    span {
+      color: $warning-color;
+    }
+  }
+}

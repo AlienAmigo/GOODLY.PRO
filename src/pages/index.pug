@@ -34,14 +34,16 @@ html(class='page no-js', lang='ru')
             img(src='img/logo.png', alt='').logo__img
             span.logo__text Ваше лого
         .social-links
-          a(href='#').social-links__vk
-          a(href='#').social-links__instagram
-          a(href='#').social-links__fb
+          a(href='#').social-links__item.social-links__item--vk
+          a(href='#').social-links__item.social-links__item--instagram
+          a(href='#').social-links__item.social-links__item--fb
 
       .page-content
-        .action
-          h1.action__title Новогодние скидки!
-          p.action__date Акция продлится до #[span="14"] января!
+        section.action
+          .action__title-wrap
+            h1.action__title Новогодние скидки!
+          .action__date-wrap
+            p.action__date Акция продлится до #[span="14"] января!
           p.action__slogan Лови момент!
 
         - for(i=0; i<4; i++)

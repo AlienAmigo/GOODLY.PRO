@@ -25,7 +25,7 @@
 $basic-font: 'Akrobat', Arial, sans-serif;
 $design-font: 'ArctikaScript', Arial, sans-serif;
 
-@mixin basic-font($mx-font-size, $mx-font-color) {
+@mixin font-basic($mx-font-size, $mx-font-color) {
   font-family: $basic-font;
   font-weight: 400;
   font-style: normal;
@@ -33,7 +33,7 @@ $design-font: 'ArctikaScript', Arial, sans-serif;
   color: $mx-font-color;
 }
 
-@mixin design-font($mx-font-size, $mx-font-color) {
+@mixin font-design($mx-font-size, $mx-font-color) {
   font-family: $design-font;
   font-weight: 400;
   font-style: normal;
