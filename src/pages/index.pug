@@ -1,7 +1,7 @@
 include ../pug/mixins.pug
 
 doctype html
-html(class='page no-js', lang='ru')
+html(class='page', lang='ru')
 
   head
     meta(charset='utf-8')
@@ -30,20 +30,20 @@ html(class='page no-js', lang='ru')
     .page-inner
       header.page-header
         logo.logo
-          a(href='/').logo__link
-            img(src='img/logo.png', alt='').logo__img
+          a.logo__link(href='/')
+            img.logo__img(src='img/logo.png', alt='')
             span.logo__text Ваше лого
         .social-links
-          a(href='#').social-links__item.social-links__item--vk
-          a(href='#').social-links__item.social-links__item--instagram
-          a(href='#').social-links__item.social-links__item--fb
+          a.social-links__item.social-links__item--vk(href='#')
+          a.social-links__item.social-links__item--instagram(href='#')
+          a.social-links__item.social-links__item--fb(href='#')
 
-      .page-content
+      .main.page-content
         section.action
           .action__title-wrap
-            h1.action__title Новогодние скидки!
+            h1.action__title Новогодние #[span Скидки]!
           .action__date-wrap
-            p.action__date Акция продлится до #[span="14"] января!
+            p.action__date Акция продлится до #[span= "14"] января!
           p.action__slogan Лови момент!
 
         - for(i=0; i<4; i++)
@@ -53,8 +53,8 @@ html(class='page no-js', lang='ru')
               img(src='img/box-mockup.png', alt='')
             .discount__price
               .discount__price
-            button(value='').discount__btn.discount__btn--buy Заказать
-            button(value='').discount__btn.discount__btn--more Подробнее
+            button.discount__btn.discount__btn--buy Заказать
+            button.discount__btn.discount__btn--more Подробнее
             a.discount__important-info
             h2.discount__title.
               #[span Секреты продуктивной работы]
@@ -79,13 +79,10 @@ html(class='page no-js', lang='ru')
             p.discount__info-text 1. Курс может поставляться на флеш-накопителе, в цифровом варианте или же как просмотр в онлайн-режиме. Курс без проблем запустится как на Windows, так и на OS X (Mac OS).
             p.discount__info-text 2. Вы защищены 100% гарантией возврата денег на тот случай, если что-то пойдет не так. Гарантия действует 90 дней.
 
-
-
-
-      form(method='post', action='', id='').news-subscribe
-        itput(type='type').news-subscribe__input
-        itput(type='type').news-subscribe__input
-        input(type='submit', value='Хочу получать новости о скидках').news-subscribe__submit
+      form.news-subscribe(method='post', action='', id='')
+        itput.news-subscribe__input(type='type')
+        itput.news-subscribe__input(type='type')
+        input.news-subscribe__submit(type='submit', value='Хочу получать новости о скидках')
 
       footer.footer
         .container.footer__container
@@ -98,5 +95,4 @@ html(class='page no-js', lang='ru')
           p.footer__text Клиентский кабинет:
             a(href='') Публичная оферта
 
-script
-
+script(src='js/script.js')

@@ -1,51 +1,55 @@
+@media (min-width: $screen-lg) {
+
+  .page {
+
+    &-inner {
+      width: 950px;
+    }
+  }
+}
+
 .page {
 
   &-inner {
-    @media (min-width: $screen-md) {
-      width: 980px;
-    }
-
-    align-self: center;
     flex-grow: 1;
+    align-self: center;
     padding-top: 64px;
   }
 
   &-header {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-content: center;
+    justify-content: space-between;
     position: fixed;
     z-index: 15;
     top: 0;
-    margin: 0;
-    width: 980px;
+    width: 950px;
     min-height: 64px;
+    margin: 0;
     background-color: rgba(255, 255, 255, 0.5);
 
     :before {
-      content: '';
-      display: block;
+      @include pseudo-block; /* stylelint-disable-line */
       z-index: -10;
-      position: absolute;
       top: 0;
       left: calc(100vw / -2);
-      height: 100%;
       width: 150vw;
+      height: 100%;
       background-color: #749c8d;
     }
   }
 }
 
 .logo {
-  align-self: center;
   display: flex;
+  align-self: center;
   flex-direction: row;
   align-content: center;
 
   &__link {
-    align-self: center;
     display: flex;
+    align-self: center;
     flex-direction: row;
     align-content: center;
     color: #fff;
@@ -61,9 +65,9 @@
     display: block;
     align-self: center;
     padding-left: 16px;
-    font-size: 19px;
+    font-size: 26px;
     text-transform: uppercase;
-    font-family: 'Tahoma', 'Arial', sans-serif;
+    font-family: Tahoma, Arial, sans-serif;
   }
 }
 
@@ -78,28 +82,24 @@
     position: relative;
     width: 42px;
     height: 42px;
+    border-radius: 21px;
 
     &--vk {
-      @extend.sprite;
-      @extend .sprite-vk-head;
+      @include sprite-vk-head; /* stylelint-disable-line */
     }
 
     &--fb {
-      @extend.sprite;
-      @extend .sprite-fb-head;
+      @include sprite-fb-head; /* stylelint-disable-line */
     }
 
     &--instagram {
-      @extend.sprite;
-      @extend .sprite-inst-head;
+      @include sprite-inst-head; /* stylelint-disable-line */
     }
   }
-
 }
 
 .footer {
   flex-grow: 0;
   height: 224px;
   background-color: #a4a4a5;
-
 }
