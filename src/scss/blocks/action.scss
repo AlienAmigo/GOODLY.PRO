@@ -16,7 +16,7 @@
       width: 100vw;
       height: 100%;
       background:
-        url('/img/banner-sale.png') 25% 0 no-repeat,
+        url('/img/banner-sale.png') 20% 0 no-repeat,
         url('/img/banner-snowman.png') calc(100vw - 390px) 100% no-repeat,
         url('/img/banner-right.png') 100% 0 no-repeat,
         url('/img/banner-left.png') 0 0 no-repeat;
@@ -47,7 +47,7 @@
     &:after {
       @include pseudo-block;  /* stylelint-disable-line */
       z-index: -1;
-      right: 5%;
+      right: 15%;
       bottom: -55px;
       width: 238px;
       height: 141px;
@@ -157,9 +157,11 @@
 
     &__date{
       font-size: 36px;
+      line-height: 44px;
 
       span {
         font-size: 46px;
+        line-height: 44px;
       }
     }
 
