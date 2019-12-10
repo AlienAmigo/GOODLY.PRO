@@ -2,6 +2,8 @@
 
   &__title-wrap {
     display: flex;
+    flex-direction: row;
+    justify-content: center;
     position: relative;
     margin-top: 17px;
     height: 247px;
@@ -34,9 +36,11 @@
   }
 
   &__title {
+    display: inline-block;
+    width: 500px;
     margin: 0;
     padding-top: 14px;
-    padding-left: 290px;
+    // padding-left: 290px;
     font-family: $design-font;
     font-size: 108px;
     line-height: 93px;

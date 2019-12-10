@@ -39,35 +39,29 @@
     color: #fff;
     font-size: 26px;
 
+    &:after {
+      @include pseudo-block;
+      z-index: 12;
+      bottom: -44px;
+      bottom: 44px;
+      right: 81px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 0 0 12px 12px;
+      border-color: transparent transparent #762102 transparent;
+    }
 
-    &--shadow {
-      &:after {
-        @include pseudo-block;
-        z-index: 12;
-        bottom: -44px;
-        bottom: 45px;
-        right: 81px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 0 12px 12px;
-        border-color: transparent transparent #762102 transparent;
-      }
-
-      &:before {
-        @include pseudo-block;
-        content: '';
-        display: block;
-        position: absolute;
-        z-index: 12;
-        bottom: 43px;
-        right: 81px;
-        width: 0;
-        height: 0;
-        border-style: solid;
-        border-width: 0 0 12px 12px;
-        border-color: #762102 transparent transparent transparent;
-      }
+    &:before {
+      @include pseudo-block;
+      z-index: 12;
+      bottom: -37px;
+      right: -11px;
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 11px 11px 0 0;
+      border-color: #762102 transparent transparent transparent;
     }
   }
 
@@ -166,7 +160,7 @@
   &__title {
     width: 100%;
     padding-left: 22px;
-    padding-right: -22px;
+    padding-right: 22px;
     font-size: 26px;
     // line-height: 57px;
     text-transform: uppercase;
@@ -182,7 +176,7 @@
 
   &__text {
     padding-left: 22px;
-    padding-right: -22px;
+    padding-right: 22px;
     color: #004734;
     font-size: 20px;
   }
