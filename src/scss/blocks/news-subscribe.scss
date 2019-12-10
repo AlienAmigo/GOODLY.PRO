@@ -1,0 +1,28 @@
+.news-subscribe {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 24px 11px;
+  background-color: #80c9b0;
+  border: 3px dotted #56907c;
+
+  &__input {
+    height: 45px;
+    width: 285px;
+    border: 1px solid #80c9b0;
+    background-color: #fff;
+    text-align: center;
+    font-family: $basic-font;
+    font-size: 21px;
+    color: #808286;
+  }
+
+  &__submit {
+    border: none;
+    background-color: #de0d08;
+    font-family: $basic-font;
+    font-size: 21px;
+    color: #fff;
+  }
+}

@@ -46,42 +46,49 @@ html(class='page', lang='ru')
             p.action__date Акция продлится до #[span= "14"] января!
           p.action__slogan Лови момент!
 
-        - for(i=0; i<4; i++)
-          section.discount
-            .discount__percent -70%
-            .discount__img-wrap
-              img(src='img/box-mockup.png', alt='')
-            .discount__price
-              .discount__price
-            button.discount__btn.discount__btn--buy Заказать
-            button.discount__btn.discount__btn--more Подробнее
-            a.discount__important-info
-            h2.discount__title.
-              #[span Секреты продуктивной работы]
-                за компьтером
-            p.discount__text К сожалению, когда человек покупает компьютер или ноутбук, то с ним нет никакого обучающего пособия о том, как использовать покупку максимально эффективно. В итоге большинство пользователей используют свой компьютер на самом примитивном уровне.
+        section.discounts
+          - for(i=0; i<4; i++)
+            section.card
+              .card__percent.card__percent--shadow -70%
+              .card__img-wrap
+                img(src='img/box-mockup.png', alt='')
+              .card__details
+                .card__price-wrap
+                  span.card__price.card__price--old 8300 ₽
+                  span.card__price 2490 ₽
+                button.card__btn.card__btn--buy Заказать
+                button.card__btn.card__btn--more Подробнее
+                a.card__important-info(href='#') Важная информация
 
-            .discount__recomendations
-              .discount__recomendations-item.discount__recomendations-item--vk
-              .discount__recomendations-item.discount__recomendations-item--instagram
-              .discount__recomendations-item.discount__recomendations-item--fb
-              .discount__recomendations-item.discount__recomendations-item--ok
-              .discount__recomendations-item.discount__recomendations-item--youtube
-              .discount__recomendations-item.discount__recomendations-item--in
-              .discount__recomendations-item.discount__recomendations-item--ljn
-              .discount__recomendations-item.discount__recomendations-item--mail
-              .discount__recomendations-item.discount__recomendations-item--yandex
-              .discount__recomendations-item.discount__recomendations-item--google
+              h2.card__title.
+                #[span Секреты продуктивной работы]
+                  за компьтером
+              p.card__text К сожалению, когда человек покупает компьютер или ноутбук, то с ним нет никакого обучающего пособия о том, как использовать покупку максимально эффективно. В итоге большинство пользователей используют свой компьютер на самом примитивном уровне.
 
-          .discount__info
-            .discount__info-close
-            p.discount__info-text Покупая данный продукт, учтите следующие его особенности:
-            p.discount__info-text 1. Курс может поставляться на флеш-накопителе, в цифровом варианте или же как просмотр в онлайн-режиме. Курс без проблем запустится как на Windows, так и на OS X (Mac OS).
-            p.discount__info-text 2. Вы защищены 100% гарантией возврата денег на тот случай, если что-то пойдет не так. Гарантия действует 90 дней.
+              .card__recomendations
+                p.card__recomendations-title Порекомендуй другу и получи дополнительную скидку
+                a.card__recomendations-item.card__recomendations-item--vk(href='#')
+                a.card__recomendations-item.card__recomendations-item--instagram(href='#')
+                a.card__recomendations-item.card__recomendations-item--fb(href='#')
+                a.card__recomendations-item.card__recomendations-item--ok(href='#')
+                a.card__recomendations-item.card__recomendations-item--youtube(href='#')
+                a.card__recomendations-item.card__recomendations-item--in(href='#')
+                a.card__recomendations-item.card__recomendations-item--lj(href='#')
+                a.card__recomendations-item.card__recomendations-item--mail(href='#')
+                a.card__recomendations-item.card__recomendations-item--yandex(href='#')
+                a.card__recomendations-item.card__recomendations-item--google(href='#')
+
+              .card-info
+                .card-info__close
+                p.card-info__text Покупая данный продукт, учтите следующие его особенности:
+                p.card-info__text 1. Курс может поставляться на флеш-накопителе, в цифровом варианте или же как просмотр в онлайн-режиме. Курс без проблем запустится как на Windows, так и на OS X (Mac OS).
+                p.card-info__text 2. Вы защищены 100% гарантией возврата денег на тот случай, если что-то пойдет не так. Гарантия действует 90 дней.
 
       form.news-subscribe(method='post', action='', id='')
-        itput.news-subscribe__input(type='type')
-        itput.news-subscribe__input(type='type')
+        itput.news-subscribe__input(type='text', placeholder
+='Ваше имя')
+        itput.news-subscribe__input(type='email', placeholder
+='Ваш e-mail')
         input.news-subscribe__submit(type='submit', value='Хочу получать новости о скидках')
 
       footer.footer

@@ -1,0 +1,95 @@
+@mixin item-block {
+  &:before {
+    content: '';
+    display: block;
+    align-self: center;
+    @content;
+  }
+}
+
+@mixin card-recomendations {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0 32px 12px 32px;
+  background-color: rgba(253, 253, 254, 0.9);
+
+  &-title {
+    width: 100%;
+    margin: 12px 0;
+    color: #828384;
+    font-size: 18px;
+  }
+
+  &-item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: #aeaeae;
+
+    &--vk {
+      @include item-block {
+        @include sprite-vk-block;
+      }
+    }
+
+    &--instagram {
+      @include item-block {
+        @include sprite-inst-block;
+      }
+    }
+
+    &--fb {
+      @include item-block {
+        @include sprite-block-fb;
+      }
+    }
+
+    &--ok {
+      @include item-block {
+        @include sprite-block-ok;
+      }
+    }
+
+    &--youtube {
+      @include item-block {
+        @include sprite-block-youtube;
+      }
+    }
+
+    &--in {
+      @include item-block {
+        @include sprite-block-in;
+      }
+    }
+
+    &--lj {
+      @include item-block {
+        @include sprite-block-pin;
+      }
+    }
+
+    &--mail {
+      @include item-block {
+        @include sprite-block-mir;
+      }
+    }
+
+    &--yandex {
+      @include item-block {
+        @include sprite-block-yandex;
+      }
+    }
+
+    &--google {
+      @include item-block {
+        @include sprite-block-gplus;
+      }
+    }
+  }
+}
