@@ -1,13 +1,3 @@
-@media (min-width: $screen-lg) {
-
-  .page {
-
-    &-inner {
-      width: 950px;
-    }
-  }
-}
-
 .page {
 
   &-inner {
@@ -33,8 +23,8 @@
       @include pseudo-block; /* stylelint-disable-line */
       z-index: -10;
       top: 0;
-      left: calc(100vw / -2);
-      width: 150vw;
+      left: calc((100vw / -2) + 50%);
+      width: 100vw;
       height: 100%;
       background-color: #749c8d;
     }
@@ -48,11 +38,11 @@
     height: 224px;
 
     &:before {
-      @include pseudo-block;
+      @include pseudo-block; /* stylelint-disable-line */
       z-index: -10;
       top: 0;
-      left: calc(100vw / -2);
-      width: 150vw;
+      left: calc((100vw / -2) + 50%);
+      width: 100vw;
       height: 100%;
       background-color: #a4a4a5;
     }
@@ -128,6 +118,53 @@
 
     &--instagram {
       @include sprite-inst-head; /* stylelint-disable-line */
+    }
+  }
+}
+
+@media (min-width: 0) and (max-width: $screen-sm) {
+  .page {
+
+    &-header {
+      min-width: 440px;
+      width: calc(100vw - 40px);
+    }
+
+    &-inner {
+      min-width: 440px;
+      width: calc(100vw - 40px);
+    }
+  }
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+  .page {
+
+    &-header {
+      width: calc(100vw - 40px);
+    }
+
+    &-inner {
+      width: calc(100vw - 40px);
+    }
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+  .page {
+
+    &-inner {
+      width: 950px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
+
+  .page {
+
+    &-inner {
+      width: 950px;
     }
   }
 }

@@ -1,4 +1,4 @@
-.news-subscribe {
+ .news-subscribe {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,4 +56,96 @@
       background-color: $gray-dark;
     }
   }
+}
+
+@media (min-width: 0) and (max-width: $screen-sm) {
+  .news-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:after {
+      display: none;
+    }
+
+    &:before {
+      display: none;
+    }
+
+    &__input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: sm) and (max-width: $screen-md) {
+  .news-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-self: center;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+    &__input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &__submit {
+      width: 100%;
+    }
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+  .news-subscribe {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-content: center;
+    width: 440px;
+    margin-left: auto;
+    margin-right: auto;
+
+    &:after {
+      display: none;
+    }
+    &:before {
+      display: none;
+    }
+
+    &__input {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+  .news-subscribe {
+    &:after {
+      display: none;
+    }
+    &:before {
+      display: none;
+    }
+  }
+}
+
+@media (min-width: $screen-lg) {
 }

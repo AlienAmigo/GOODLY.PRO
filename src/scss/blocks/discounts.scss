@@ -1,3 +1,4 @@
+
 .discounts {
   display: flex;
   flex-direction: row;
@@ -222,4 +223,36 @@
   &--active {
     display: block;
   }
+}
+
+@media (min-width: 0) and (max-width: $screen-sm) {
+  .discounts {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    }
+
+  .card {
+    align-self: center;
+  }
+}
+
+@media (min-width: $screen-sm) and (max-width: $screen-md) {
+  .discounts {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    }
+
+  .card {
+    align-self: center;
+  }
+}
+
+@media (min-width: $screen-md) and (max-width: $screen-lg) {
+
+}
+
+@media (min-width: $screen-lg) {
+
 }
