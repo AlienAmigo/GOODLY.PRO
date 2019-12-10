@@ -19,6 +19,8 @@ const concat = require('gulp-concat');
 const pug = require('gulp-pug');
 const prettyHtml = require('gulp-pretty-html');
 const replace = require('gulp-replace');
+const ghpages = require('gh-pages');
+const path = require('path');
 
 function compilePug() {
   return src(dir.src + 'pages/**/*.pug')
@@ -119,6 +121,12 @@ function copyAddJS() {
     .pipe(dest(dir.build + 'js/'));
 }
 exports.copyAddJS = copyAddJS;
+
+// отправка build на gр-pages
+function deploy(cb) {
+  ghPages.publish(path.join(process.cwd(), './build'), cb);
+}
+exports.deploy = deploy;
 
 
 function serve() {
