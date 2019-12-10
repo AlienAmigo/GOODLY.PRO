@@ -3,9 +3,9 @@
   &-inner {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     flex-grow: 1;
     align-self: center;
+    justify-content: center;
     padding-top: 64px;
     // width: 950px;
   }
@@ -72,14 +72,14 @@
 
 .logo {
   display: flex;
-  align-self: center;
   flex-direction: row;
   align-content: center;
+  align-self: center;
 
   &__link {
     display: flex;
-    align-self: center;
     flex-direction: row;
+    align-self: center;
     align-content: center;
     color: #fff;
     text-decoration: none;
@@ -128,12 +128,13 @@
   }
 }
 
-@media (min-width: 0) and (max-width: sm) {
+@media (max-width: sm) {
+
   .page {
 
     &-header {
-      min-width: 440px;
       width: calc(100vw - 40px);
+      min-width: 440px;
 
       &:before {
         right: -20px;
@@ -143,13 +144,14 @@
 
     &-inner {
       flex-direction: column;
-      min-width: 440px;
       width: calc(100vw - 40px);
+      min-width: 440px;
     }
   }
 }
 
 @media (min-width: $screen-sm) and (max-width: $screen-md) {
+
   .page {
 
     &-header {
@@ -164,12 +166,12 @@
     &-inner {
       flex-direction: column;
       width: calc(100vw - 40px);
-
     }
   }
 }
 
 @media (min-width: $screen-md) and (max-width: $screen-lg) {
+
   .page {
 
     &-inner {
