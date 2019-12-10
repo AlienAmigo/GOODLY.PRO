@@ -16,10 +16,10 @@
       width: 100vw;
       height: 100%;
       background:
-        url('/img/banner-sale.png') 20% 0 no-repeat,
-        url('/img/banner-snowman.png') calc(100vw - 390px) 100% no-repeat,
-        url('/img/banner-right.png') 100% 0 no-repeat,
-        url('/img/banner-left.png') 0 0 no-repeat;
+        url('../img/banner-sale.png') 20% 0 no-repeat,
+        url('../img/banner-snowman.png') calc(100vw - 390px) 100% no-repeat,
+        url('../img/banner-right.png') 100% 0 no-repeat,
+        url('../img/banner-left.png') 0 0 no-repeat;
       background-color: #f0f0ea;
       box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
     }
@@ -50,7 +50,7 @@
       bottom: -55px;
       width: 238px;
       height: 141px;
-      background: url('/img/banner-ok.png') 0 0 no-repeat;
+      background: url('../img/banner-ok.png') 0 0 no-repeat;
     }
   }
 
@@ -62,7 +62,7 @@
     margin-top: 69px;
     max-width: calc(100vw - 40px);
     height: 110px;
-    background: url('/img/promo-back.png') 0 0 no-repeat;
+    background: url('../img/promo-back.png') 0 0 no-repeat;
     background-size: 100% 100%;
 
     &:before {
@@ -141,10 +141,10 @@
 
       &:before {
         background:
-          // url('/img/banner-sale.png') 25% 0 no-repeat,
-          // url('/img/banner-snowman.png') calc(100vw - 390px) 100% no-repeat,
-          url('/img/banner-right.png') 100% 0 no-repeat,
-          url('/img/banner-left.png') 0 0 no-repeat;
+          // url('../img/banner-sale.png') 25% 0 no-repeat,
+          // url('../img/banner-snowman.png') calc(100vw - 390px) 100% no-repeat,
+          url('../img/banner-right.png') 100% 0 no-repeat,
+          url('../img/banner-left.png') 0 0 no-repeat;
       }
     }
 
@@ -196,10 +196,10 @@
       &:before {
         @include pseudo-block; /* stylelint-disable-line */
         background:
-          // url('/img/banner-sale.png') 25% 0 no-repeat,
-          // url('/img/banner-snowman.png') calc(100vw - 390px) 100% no-repeat,
-          url('/img/banner-right.png') 100% 0 no-repeat,
-          url('/img/banner-left.png') 0 0 no-repeat;
+          // url('../img/banner-sale.png') 25% 0 no-repeat,
+          // url('../img/banner-snowman.png') calc(100vw - 390px) 100% no-repeat,
+          url('../img/banner-right.png') 100% 0 no-repeat,
+          url('../img/banner-left.png') 0 0 no-repeat;
       }
     }
 

@@ -124,7 +124,7 @@ exports.copyAddJS = copyAddJS;
 
 // отправка build на gр-pages
 function deploy(cb) {
-  ghPages.publish(path.join(process.cwd(), './build'), cb);
+  ghpages.publish(path.join(process.cwd(), dir.build), cb);
 }
 exports.deploy = deploy;
 
