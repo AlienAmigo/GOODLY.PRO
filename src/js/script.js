@@ -12,20 +12,19 @@ ready(function() {
   const myCloseInfo = document.querySelectorAll('.card-info__close');
   const myCardInfo = document.querySelectorAll('.card-info');
 
-  function switchClass(obj, st) {
-    obj.classList.toggle(st);
-  };
+  myInfoSwitch.forEach( (item, index) => {
+    item.addEventListener('click', function() {
+      myCardInfo[index].classList.add('card-info--active');
+      myInfoSwitch[index].classList.add('card__important-info--non-active');
+    });
+  });
 
-  // for (i = 0; i < myInfoSwitch.length; i++) {
-  //   myInfoSwitch[i].onclick = switchClass(myCardInfo[i], 'card-info--active');
-  //   myInfoSwitch[i].onclick = alert('OK');
-
-  //   myCloseInfo[i].onclick = addEventListener('click', switchClass(myCardInfo[i], 'card-info--active'));
-  // }
-
-  // myInfoSwitch.forEach( (item, index) => {
-  //   item.addEventListener('click', switchClass(item, 'card-info--active'));
-  // });
+  myCloseInfo.forEach( (item, index) => {
+    item.addEventListener('click', function() {
+      myCardInfo[index].classList.remove('card-info--active');
+      myInfoSwitch[index].classList.remove('card__important-info--non-active');
+    });
+  });
 
 
 });
