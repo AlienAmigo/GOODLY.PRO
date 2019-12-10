@@ -182,11 +182,11 @@ pre {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  -webkit-box-pack: center;
-          justify-content: center;
   -webkit-box-flex: 1;
           flex-grow: 1;
   align-self: center;
+  -webkit-box-pack: center;
+          justify-content: center;
   padding-top: 64px; }
 
 .page-header {
@@ -232,7 +232,7 @@ pre {
     z-index: -10;
     top: 0;
     left: calc((100vw / -2) + 50%);
-    width: 100vw;
+    width: 150vw;
     height: 100%;
     background-color: #a4a4a5; }
   .page-footer__text {
@@ -248,18 +248,18 @@ pre {
 .logo {
   display: -webkit-box;
   display: flex;
-  align-self: center;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
           flex-direction: row;
-  align-content: center; }
+  align-content: center;
+  align-self: center; }
   .logo__link {
     display: -webkit-box;
     display: flex;
-    align-self: center;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
             flex-direction: row;
+    align-self: center;
     align-content: center;
     color: #fff;
     text-decoration: none; }
@@ -290,7 +290,7 @@ pre {
     height: 42px;
     border-radius: 21px; }
     .social-links__item--vk {
-      background-image: url("/img/spritesheet.png");
+      background-image: url("../img/spritesheet.png");
       background-repeat: no-repeat;
       display: block;
       width: 41px;
@@ -298,7 +298,7 @@ pre {
       background-position: -35px -297px;
       /* stylelint-disable-line */ }
     .social-links__item--fb {
-      background-image: url("/img/spritesheet.png");
+      background-image: url("../img/spritesheet.png");
       background-repeat: no-repeat;
       display: block;
       width: 41px;
@@ -306,7 +306,7 @@ pre {
       background-position: -234px -246px;
       /* stylelint-disable-line */ }
     .social-links__item--instagram {
-      background-image: url("/img/spritesheet.png");
+      background-image: url("../img/spritesheet.png");
       background-repeat: no-repeat;
       display: block;
       width: 41px;
@@ -316,8 +316,8 @@ pre {
 
 @media (max-width: sm) {
   .page-header {
-    min-width: 440px;
-    width: calc(100vw - 40px); }
+    width: calc(100vw - 40px);
+    min-width: 440px; }
     .page-header:before {
       right: -20px;
       width: 150vw; }
@@ -325,8 +325,8 @@ pre {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-    min-width: 440px;
-    width: calc(100vw - 40px); } }
+    width: calc(100vw - 40px);
+    min-width: 440px; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .page-header {
@@ -379,7 +379,7 @@ pre {
     left: calc((100vw / -2) + 50%);
     width: 100vw;
     height: 100%;
-    background: url("/img/banner-sale.png") 20% 0 no-repeat, url("/img/banner-snowman.png") calc(100vw - 390px) 100% no-repeat, url("/img/banner-right.png") 100% 0 no-repeat, url("/img/banner-left.png") 0 0 no-repeat;
+    background: url("../img/banner-sale.png") 20% 0 no-repeat, url("../img/banner-snowman.png") calc(100vw - 390px) 100% no-repeat, url("../img/banner-right.png") 100% 0 no-repeat, url("../img/banner-left.png") 0 0 no-repeat;
     background-color: #f0f0ea;
     box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4); }
 
@@ -407,7 +407,7 @@ pre {
     bottom: -55px;
     width: 238px;
     height: 141px;
-    background: url("/img/banner-ok.png") 0 0 no-repeat; }
+    background: url("../img/banner-ok.png") 0 0 no-repeat; }
 
 .action__date-wrap {
   display: -webkit-box;
@@ -421,7 +421,7 @@ pre {
   margin-top: 69px;
   max-width: calc(100vw - 40px);
   height: 110px;
-  background: url("/img/promo-back.png") 0 0 no-repeat;
+  background: url("../img/promo-back.png") 0 0 no-repeat;
   background-size: 100% 100%; }
   .action__date-wrap:before {
     content: '';
@@ -430,7 +430,7 @@ pre {
     /* stylelint-disable-line */
     top: 55px;
     left: 27px;
-    background-image: url("/img/spritesheet.png");
+    background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
     display: block;
     width: 54px;
@@ -444,7 +444,7 @@ pre {
     /* stylelint-disable-line */
     top: 55px;
     right: 27px;
-    background-image: url("/img/spritesheet.png");
+    background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
     display: block;
     width: 54px;
@@ -482,7 +482,7 @@ pre {
     display: block;
     position: absolute;
     /* stylelint-disable-line */
-    background-image: url("/img/spritesheet.png");
+    background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
     display: block;
     width: 111px;
@@ -505,7 +505,7 @@ pre {
 
 @media (min-width: 0) and (max-width: 768px) {
   .action__title-wrap:before {
-    background: url("/img/banner-right.png") 100% 0 no-repeat, url("/img/banner-left.png") 0 0 no-repeat; }
+    background: url("../img/banner-right.png") 100% 0 no-repeat, url("../img/banner-left.png") 0 0 no-repeat; }
   .action__slogan {
     display: none; }
     .action__slogan:before {
@@ -530,7 +530,7 @@ pre {
     display: block;
     position: absolute;
     /* stylelint-disable-line */
-    background: url("/img/banner-right.png") 100% 0 no-repeat, url("/img/banner-left.png") 0 0 no-repeat; }
+    background: url("../img/banner-right.png") 100% 0 no-repeat, url("../img/banner-left.png") 0 0 no-repeat; }
   .action__slogan {
     display: none; }
     .action__slogan:before {
@@ -604,7 +604,7 @@ pre {
       display: block;
       position: absolute;
       z-index: 12;
-      bottom: -37px;
+      bottom: -36px;
       right: -11px;
       width: 0;
       height: 0;
@@ -612,7 +612,7 @@ pre {
       border-width: 11px 11px 0 0;
       border-color: #762102 transparent transparent transparent; }
   .card__img-wrap {
-    margin-right: 12px;
+    margin-right: 27px;
     max-width: 50%; }
     .card__img-wrap img {
       width: 100%;
@@ -692,7 +692,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 20px;
@@ -702,7 +702,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 16px;
@@ -712,7 +712,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 10px;
@@ -722,7 +722,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 12px;
@@ -732,7 +732,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 20px;
@@ -742,7 +742,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 15px;
@@ -752,7 +752,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 15px;
@@ -762,7 +762,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 17px;
@@ -772,7 +772,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 9px;
@@ -782,7 +782,7 @@ pre {
         content: '';
         display: block;
         align-self: center;
-        background-image: url("/img/spritesheet.png");
+        background-image: url("../img/spritesheet.png");
         background-repeat: no-repeat;
         display: block;
         width: 18px;
@@ -851,7 +851,7 @@ pre {
     position: absolute;
     top: 10px;
     right: 10px;
-    background-image: url("/img/spritesheet.png");
+    background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
     display: block;
     width: 23px;
@@ -906,7 +906,7 @@ pre {
     position: absolute;
     left: -128px;
     top: 20px;
-    background-image: url("/img/spritesheet.png");
+    background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
     display: block;
     width: 78px;
@@ -918,7 +918,7 @@ pre {
     position: absolute;
     right: -128px;
     top: 20px;
-    background-image: url("/img/spritesheet.png");
+    background-image: url("../img/spritesheet.png");
     background-repeat: no-repeat;
     display: block;
     width: 78px;
