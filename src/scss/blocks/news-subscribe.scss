@@ -3,9 +3,25 @@
   flex-direction: row;
   justify-content: space-between;
   flex-wrap: wrap;
+  position: relative;
+  margin-top: 6px;
   padding: 24px 11px;
   background-color: #80c9b0;
   border: 3px dotted #56907c;
+
+  &:before {
+    @include pseudo-block;
+    left: -128px;
+    top: 20px;
+    @include sprite-arrow-form-left;
+  }
+
+  &:after {
+    @include pseudo-block;
+    right: -128px;
+    top: 20px;
+    @include sprite-arrow-form-right;
+  }
 
   &__input {
     display: block;

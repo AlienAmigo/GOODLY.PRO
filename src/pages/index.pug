@@ -60,29 +60,30 @@ html(class='page', lang='ru')
                 button.card__btn.card__btn--more Подробнее
                 a.card__important-info(href='#') Важная информация
 
-              h2.card__title.
-                #[span Секреты продуктивной работы]
-                  за компьтером
-              p.card__text К сожалению, когда человек покупает компьютер или ноутбук, то с ним нет никакого обучающего пособия о том, как использовать покупку максимально эффективно. В итоге большинство пользователей используют свой компьютер на самом примитивном уровне.
+              .card__text-wrap
+                h2.card__title.
+                  #[span Секреты продуктивной работы]
+                    за компьтером
+                p.card__text К сожалению, когда человек покупает компьютер или ноутбук, то с ним нет никакого обучающего пособия о том, как использовать покупку максимально эффективно. В итоге большинство пользователей используют свой компьютер на самом примитивном уровне.
 
-              .card__recomendations
-                p.card__recomendations-title Порекомендуй другу и получи дополнительную скидку
-                a.card__recomendations-item.card__recomendations-item--vk(href='#')
-                a.card__recomendations-item.card__recomendations-item--instagram(href='#')
-                a.card__recomendations-item.card__recomendations-item--fb(href='#')
-                a.card__recomendations-item.card__recomendations-item--ok(href='#')
-                a.card__recomendations-item.card__recomendations-item--youtube(href='#')
-                a.card__recomendations-item.card__recomendations-item--in(href='#')
-                a.card__recomendations-item.card__recomendations-item--lj(href='#')
-                a.card__recomendations-item.card__recomendations-item--mail(href='#')
-                a.card__recomendations-item.card__recomendations-item--yandex(href='#')
-                a.card__recomendations-item.card__recomendations-item--google(href='#')
+                .card__recomendations
+                  p.card__recomendations-title Порекомендуй другу и получи дополнительную скидку
+                  a.card__recomendations-item.card__recomendations-item--vk(href='#')
+                  a.card__recomendations-item.card__recomendations-item--instagram(href='#')
+                  a.card__recomendations-item.card__recomendations-item--fb(href='#')
+                  a.card__recomendations-item.card__recomendations-item--ok(href='#')
+                  a.card__recomendations-item.card__recomendations-item--youtube(href='#')
+                  a.card__recomendations-item.card__recomendations-item--in(href='#')
+                  a.card__recomendations-item.card__recomendations-item--lj(href='#')
+                  a.card__recomendations-item.card__recomendations-item--mail(href='#')
+                  a.card__recomendations-item.card__recomendations-item--yandex(href='#')
+                  a.card__recomendations-item.card__recomendations-item--google(href='#')
 
-              .card-info
-                .card-info__close
-                p.card-info__text Покупая данный продукт, учтите следующие его особенности:
-                p.card-info__text 1. Курс может поставляться на флеш-накопителе, в цифровом варианте или же как просмотр в онлайн-режиме. Курс без проблем запустится как на Windows, так и на OS X (Mac OS).
-                p.card-info__text 2. Вы защищены 100% гарантией возврата денег на тот случай, если что-то пойдет не так. Гарантия действует 90 дней.
+                .card-info
+                  .card-info__close
+                  p.card-info__text Покупая данный продукт, учтите следующие его особенности:
+                  p.card-info__text 1. Курс может поставляться на флеш-накопителе, в цифровом варианте или же как просмотр в онлайн-режиме. Курс без проблем запустится как на Windows, так и на OS X (Mac OS).
+                  p.card-info__text 2. Вы защищены 100% гарантией возврата денег на тот случай, если что-то пойдет не так. Гарантия действует 90 дней.
 
       form.news-subscribe(method='post', action='', id='')
         input.news-subscribe__input(type='text', placeholder
@@ -91,15 +92,9 @@ html(class='page', lang='ru')
 ='Ваш e-mail')
         input.news-subscribe__submit(type='submit', value='Хочу получать новости о скидках')
 
-      footer.footer
-        .container.footer__container
-          p.footer__text
-            a(href='') Политика конфедициальности
-            a(href='') Публичная оферта
-          p.footer__text
-            a(href='') Политика конфедициальности
-            a(href='') Публичная оферта
-          p.footer__text Клиентский кабинет:
-            a(href='') Публичная оферта
+      footer.page-footer
+        p.page-footer__text #[a(href='#') Политика конфедициальности] | #[a(href='#') Публичная оферта]
+        p.page-footer__text Публичная программа: #[a(href='#') Регистрация] | #[a(href='#') Вход]
+        p.page-footer__text Клиентский кабинет: #[a(href='#') Публичная оферта]
 
 script(src='js/script.js')
