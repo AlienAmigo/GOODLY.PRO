@@ -8,21 +8,36 @@
   border: 3px dotted #56907c;
 
   &__input {
-    height: 45px;
+    display: block;
     width: 285px;
-    border: 1px solid #80c9b0;
+    height: 45px;
+    border: 1px solid #59907d;
     background-color: #fff;
     text-align: center;
     font-family: $basic-font;
     font-size: 21px;
     color: #808286;
+    outline: 1px;
+    outline-color: #59907d;
+    outline-offset: 0;
   }
 
   &__submit {
+    display: block;
+    width: 330px;
+    height: 45px;
+    padding: 0;
     border: none;
     background-color: #de0d08;
     font-family: $basic-font;
     font-size: 21px;
     color: #fff;
+    cursor: pointer;
+    outline: 0;
+    outline-offset: 0;
+
+    &:hover {
+      background-color: $gray-dark;
+    }
   }
 }

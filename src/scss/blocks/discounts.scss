@@ -120,6 +120,10 @@
     font-family: $basic-font;
     cursor: pointer;
 
+    &:hover {
+      background-color: $gray-dark;
+    }
+
     &--buy {
       background-color: #3ab16f;
       color: #fff;
