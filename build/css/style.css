@@ -337,7 +337,8 @@ pre {
   .page-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column; } }
+            flex-direction: column;
+    width: calc(100vw - 40px); } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .page-inner {
