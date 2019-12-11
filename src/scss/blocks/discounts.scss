@@ -67,6 +67,7 @@
 
   &__img-wrap {
     // padding-top: 22px;
+    width: auto;
     margin-right: 27px;
     max-width: 50%;
 
@@ -247,7 +248,12 @@
 
   .card {
     align-self: center;
+    max-width: 440px;
     width: calc(100% - 20px);
+
+    &__img-wrap {
+      width: 35%;
+    }
   }
 }
 
@@ -261,6 +267,10 @@
   .card {
     align-self: center;
     width: 440px;
+
+    &__img-wrap {
+      width: auto;
+    }
   }
 }
 
