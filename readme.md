@@ -1,5 +1,3 @@
-# Тестовое задание для ООО «Директ»
-
 ## Cтэк
 HTML5 (+ Pug), CSS3 (+ SASS (SCSS)), Javascript
 
