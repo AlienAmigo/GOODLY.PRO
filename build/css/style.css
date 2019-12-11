@@ -316,29 +316,28 @@ pre {
 
 @media (max-width: sm) {
   .page-header {
-    width: calc(100vw - 40px);
-    min-width: 440px; }
+    width: calc(100vw - 40px); }
     .page-header:before {
       right: -20px;
-      width: 150vw; }
+      width: calc(100% + 20px); }
   .page-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
             flex-direction: column;
-    width: calc(100vw - 40px);
-    min-width: 440px; } }
+    width: calc(100vw - 40px); }
+  .social-links {
+    margin-left: 0; } }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .page-header {
     width: calc(100vw - 40px); }
     .page-header:before {
       left: -20px;
-      width: 120vw; }
+      width: calc(100% + 20px); }
   .page-inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-            flex-direction: column;
-    width: calc(100vw - 40px); } }
+            flex-direction: column; } }
 
 @media (min-width: 992px) and (max-width: 1200px) {
   .page-inner {
@@ -561,7 +560,6 @@ pre {
           justify-content: space-between;
   flex-wrap: wrap;
   position: relative;
-  width: 440px;
   margin-bottom: 64px;
   padding: 22px 0 7px 0;
   background-color: #e9ecf2;
@@ -873,7 +871,8 @@ pre {
             flex-direction: column;
     align-content: center; }
   .card {
-    align-self: center; } }
+    align-self: center;
+    width: calc(100% - 20px); } }
 
 @media (min-width: 768px) and (max-width: 992px) {
   .discounts {
@@ -884,7 +883,16 @@ pre {
             flex-direction: column;
     align-content: center; }
   .card {
-    align-self: center; } }
+    align-self: center;
+    width: 440px; } }
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  .card {
+    width: 440px; } }
+
+@media (min-width: 1200px) {
+  .card {
+    width: 440px; } }
 
 .news-subscribe {
   display: -webkit-box;
